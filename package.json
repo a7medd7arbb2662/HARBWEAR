@@ -1,0 +1,12 @@
+{
+  "name": "harbwear",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HARBWEAR — Crafted for Everyday Style. Premium minimal streetwear landing experience (no build step).",
+  "author": "Ahmed Harb",
+  "license": "MIT",
+  "scripts": {
+    "start": "python -m http.server 8081",
+    "test": "node tests/smoke.js"
+  }
+}

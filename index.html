@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARBWEAR™ — Crafted for Everyday Style</title>
+  <meta name="description" content="HARBWEAR — minimal, functional, timeless everyday wear. Essentials, oversized, limited drops. Designed in Cairo, made to be lived in.">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/img/hero-main.jpg">
+  <link rel="preload" as="image" href="assets/img/hero-sneaker.jpg">
+  <link rel="preload" as="image" href="assets/img/hero-hoodie.jpg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-sweep"></div>
+    <div class="pre-inner">
+      <div class="pre-logo"><img src="assets/favicon.svg" alt="HW monogram"></div>
+      <div class="pre-word">HARBWEAR<sup>™</sup></div>
+      <div class="pre-logo-rule"></div>
+      <div class="pre-count"><span id="pre-num">0</span><span class="pre-pct">%</span></div>
+      <div class="pre-bar"><div id="pre-fill"></div></div>
+      <div class="pre-tag">Crafted for Everyday Style</div>
+    </div>
+  </div>
+
+  <!-- ══════════ CURSOR ══════════ -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="grain" aria-hidden="true"></div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header id="nav">
+    <a class="logo" href="#hero" data-hover aria-label="HARBWEAR — home">
+      <img class="logo-mark" src="assets/favicon.svg" alt="">
+      <span class="logo-word">HARBWEAR<sup>™</sup></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#collections" data-hover>Collections</a>
+      <a href="#categories" data-hover>Shop</a>
+      <a href="#story" data-hover>About</a>
+      <a href="#newsletter" data-hover>Contact</a>
+    </nav>
+    <div class="nav-icons">
+      <button class="icon-btn" id="nav-search" data-hover aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" id="nav-wish" data-hover aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20.5s-7.5-4.7-9.3-9.5C1.4 7.6 3.6 4.5 7 4.5c2.1 0 3.9 1.2 5 3 1.1-1.8 2.9-3 5-3 3.4 0 5.6 3.1 4.3 6.5-1.8 4.8-9.3 9.5-9.3 9.5Z"/></svg>
+        <span class="cart-count" id="nav-wish-count">0</span>
+      </button>
+      <button class="icon-btn cart-btn" id="nav-cart" data-hover aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1.2 12.2a1.6 1.6 0 0 1-1.6 1.4H8.8a1.6 1.6 0 0 1-1.6-1.4L6 8Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg>
+        <span class="cart-count" id="nav-cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section id="hero">
+      <div class="hero-bg" id="heroBg">
+        <img src="assets/img/hero-main.jpg" alt="HARBWEAR model in black tee" fetchpriority="high">
+        <div class="hero-veil"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-kicker">FW26 — New Season · Cairo</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner">Crafted For</span></span>
+          <span class="line"><span class="line-inner">Everyday</span></span>
+          <span class="line line-accent"><span class="line-inner">Style.</span></span>
+        </h1>
+        <p class="hero-sub">Minimal. Functional. Timeless. Designed to be part of your everyday life — heavyweight fabrics, cut in Cairo.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#categories" data-hover>Shop Now →</a>
+          <a class="btn btn-ghost" href="#story" data-hover>View Collection</a>
+        </div>
+      </div>
+
+      <div class="hero-card card-sneaker" data-tilt>
+        <div class="hc-img"><img src="assets/img/hero-sneaker.jpg" alt="Air Weave sneaker — floating product shot" fetchpriority="high"></div>
+        <div class="hc-meta">
+          <span class="hc-drop">Drop 001</span>
+          <span class="hc-name">Air Weave '26</span>
+        </div>
+      </div>
+
+      <div class="hero-card card-hoodie" data-tilt>
+        <div class="hc-img"><img src="assets/img/hero-hoodie.jpg" alt="Heavyweight hoodie — lookbook" fetchpriority="high"></div>
+        <div class="hc-meta">
+          <span class="hc-drop">Essentials</span>
+          <span class="hc-name">Heavyweight Hoodie</span>
+        </div>
+      </div>
+
+      <div class="hero-side">EST. 2026 — EG</div>
+      <div class="hero-scroll" data-hover><span>Scroll</span><i class="scroll-line"></i></div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Quality Over Everything</span><i>•</i><span>Designed To Last</span><i>•</i><span>Premium Materials</span><i>•</i><span>Made For You</span><i>•</i>
+        </div>
+        <div class="marquee-group">
+          <span>Quality Over Everything</span><i>•</i><span>Designed To Last</span><i>•</i><span>Premium Materials</span><i>•</i><span>Made For You</span><i>•</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ COLLECTIONS ══════════ -->
+    <section id="collections">
+      <div class="sec-head">
+        <p class="kicker">The Collections</p>
+        <h2 class="sec-title">Built To Last.<br><em>Worn To Live.</em></h2>
+        <a class="sec-link" href="#categories" data-hover>View all →</a>
+      </div>
+
+      <div class="col-grid">
+        <a class="col-card card-a" href="#products" data-hover data-collection="essentials">
+          <div class="cc-img"><img src="assets/img/coll-essentials.jpg" alt="Essentials collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 01</div>
+          <h3 class="cc-name">Essentials</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-b" href="#products" data-hover data-collection="oversized">
+          <div class="cc-img"><img src="assets/img/coll-oversized.jpg" alt="Oversized collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 02</div>
+          <h3 class="cc-name">Oversized</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-c" href="#products" data-hover data-collection="premium">
+          <div class="cc-img"><img src="assets/img/coll-premium.jpg" alt="Premium collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 03</div>
+          <h3 class="cc-name">Premium</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-d" href="#products" data-hover data-collection="streetwear">
+          <div class="cc-img"><img src="assets/img/coll-streetwear.jpg" alt="Streetwear collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 04</div>
+          <h3 class="cc-name">Streetwear</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-e" href="#products" data-hover data-collection="black">
+          <div class="cc-img"><img src="assets/img/coll-black.jpg" alt="Black collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 05</div>
+          <h3 class="cc-name">Black Collection</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-f light" href="#products" data-hover data-collection="white">
+          <div class="cc-img"><img src="assets/img/coll-white.jpg" alt="White collection" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 06</div>
+          <h3 class="cc-name">White Collection</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-g" href="#products" data-hover data-collection="limited">
+          <div class="cc-img"><img src="assets/img/coll-limited.jpg" alt="Limited edition" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 07</div>
+          <h3 class="cc-name">Limited Edition</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+
+        <a class="col-card card-h banner" href="#products" data-hover data-collection="new-arrival">
+          <div class="cc-img"><img src="assets/img/coll-newarrival.jpg" alt="New arrival" loading="lazy"></div>
+          <div class="cc-shade"></div>
+          <div class="cc-tag">Collection 08</div>
+          <h3 class="cc-name">New Arrival</h3>
+          <div class="cc-go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+        </a>
+      </div>
+
+      <!-- Featured products -->
+      <div class="prods-head" id="products">
+        <div>
+          <p class="kicker">The Drop</p>
+          <h2 class="sec-title" id="prods-title">New<br><em>Arrivals</em></h2>
+        </div>
+        <div class="prods-side">
+          <button class="filter-chip" id="filter-chip" hidden>Showing: <span id="filter-name"></span><i id="filter-clear" title="Clear filter">✕</i></button>
+          <a class="sec-link" href="#categories" data-hover>View all →</a>
+        </div>
+      </div>
+
+      <div class="cat-filter-row" id="cat-filter"></div>
+      <div class="prod-grid" id="prod-grid"></div>
+    </section>
+
+    <!-- ══════════ CATEGORIES (pinned horizontal) ══════════ -->
+    <section id="categories">
+      <div class="pin-wrap">
+        <div class="cat-intro">
+          <p class="kicker">Shop by Category</p>
+          <h2 class="sec-title">Browse<br><em>The Archive</em></h2>
+          <p class="cat-note">Every silhouette, sorted. Scroll to move through the shop.</p>
+        </div>
+        <div class="cat-strip">
+          <a class="cat-chip light" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-tshirts.jpg" alt="T-Shirts" loading="lazy"></div>
+            <span class="chip-name">T-Shirts <span class="chip-count">01</span></span>
+          </a>
+          <a class="cat-chip" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-hoodies.jpg" alt="Hoodies" loading="lazy"></div>
+            <span class="chip-name">Hoodies <span class="chip-count">02</span></span>
+          </a>
+          <a class="cat-chip" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-pants.jpg" alt="Pants" loading="lazy"></div>
+            <span class="chip-name">Pants <span class="chip-count">03</span></span>
+          </a>
+          <a class="cat-chip" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-sneakers.jpg" alt="Sneakers" loading="lazy"></div>
+            <span class="chip-name">Sneakers <span class="chip-count">04</span></span>
+          </a>
+          <a class="cat-chip" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-caps.jpg" alt="Caps" loading="lazy"></div>
+            <span class="chip-name">Caps <span class="chip-count">05</span></span>
+          </a>
+          <a class="cat-chip" href="#newsletter" data-hover>
+            <div class="chip-img"><img src="assets/img/cat-accessories.jpg" alt="Accessories" loading="lazy"></div>
+            <span class="chip-name">Accessories <span class="chip-count">06</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ STORY ══════════ -->
+    <section id="story">
+      <div class="story-media">
+        <div class="story-frame"></div>
+        <div class="story-img"><img src="assets/img/story-craft.jpg" alt="Cutting fabric at the HARBWEAR atelier" loading="lazy"></div>
+        <div class="story-badge">EST.<br>2026</div>
+      </div>
+      <div class="story-body">
+        <p class="kicker">About Harbwear</p>
+        <h2 class="sec-title">Crafted For<br><em>Everyday Style</em></h2>
+        <p class="story-p">HARBWEAR began with a simple belief — clothes should survive the week, not just the photo. We cut from heavyweight fabrics, test every seam, and keep the design quiet enough to live in.</p>
+        <p class="story-p">No seasons of noise. Just essentials, made properly — and a few limited drops for the ones who know.</p>
+        <div class="story-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="100">0</span>
+            <span class="stat-label">% Egyptian Cotton</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label">Drops / Year</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Quality Checks</span>
+          </div>
+        </div>
+        <p class="story-sign">— Ahmed Harb, Founder</p>
+      </div>
+    </section>
+
+    <!-- ══════════ NEWSLETTER ══════════ -->
+    <section id="newsletter">
+      <p class="kicker">First Access</p>
+      <h2 class="sec-title">Stay In<br><em>The Loop</em></h2>
+      <p class="nl-sub">Early access to drops, members-only pricing. Zero spam — we're too minimal for that.</p>
+      <form id="nl-form" novalidate>
+        <input id="nl-email" type="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="btn btn-primary" type="submit" data-hover>Subscribe →</button>
+      </form>
+      <p class="nl-note" id="nl-note"></p>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer id="footer">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="#hero" data-hover aria-label="HARBWEAR — home">
+          <img class="logo-mark" src="assets/favicon.svg" alt="">
+          <span class="logo-word">HARBWEAR<sup>™</sup></span>
+        </a>
+        <p class="foot-tag">Crafted for Everyday Style.</p>
+        <div class="socials">
+          <a href="#" data-hover>Instagram</a>
+          <a href="#" data-hover>TikTok</a>
+          <a href="#" data-hover>Facebook</a>
+          <a href="#" data-hover>YouTube</a>
+          <a href="#" data-hover>Snapchat</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <a href="#categories" data-hover>All Products</a>
+        <a href="#categories" data-hover>T-Shirts</a>
+        <a href="#categories" data-hover>Hoodies</a>
+        <a href="#categories" data-hover>Pants</a>
+        <a href="#categories" data-hover>Accessories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#story" data-hover>About Us</a>
+        <a href="#newsletter" data-hover>Careers</a>
+        <a href="#story" data-hover>Sustainability</a>
+        <a href="#newsletter" data-hover>Press</a>
+      </div>
+      <div class="foot-col">
+        <h4>Help</h4>
+        <a href="#newsletter" data-hover>Shipping</a>
+        <a href="#newsletter" data-hover>Returns</a>
+        <a href="#newsletter" data-hover>Size Guide</a>
+        <a href="#newsletter" data-hover>FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="#newsletter" data-hover>Terms &amp; Conditions</a>
+        <a href="#newsletter" data-hover>Privacy Policy</a>
+        <a href="#newsletter" data-hover>Cookies Policy</a>
+      </div>
+    </div>
+
+    <div class="foot-pay" aria-label="Payment methods">
+      <span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>PayPal</span><span>Cash on Delivery</span><span>Paymob</span><span>Fawry</span><span>Meeza</span>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 HARBWEAR. ALL RIGHTS RESERVED.</span>
+      <span><b>MADE FOR YOU.</b> · Made with ❤️ in Egypt</span>
+    </div>
+  </footer>
+
+  <!-- ══════════ CART / WISHLIST DRAWER ══════════ -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Cart and wishlist">
+    <div class="drawer-head">
+      <div class="drawer-tabs">
+        <button class="dtab active" data-tab="cart">Cart <span id="drawer-cart-count">0</span></button>
+        <button class="dtab" data-tab="wish">Wishlist <span id="drawer-wish-count">0</span></button>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+    <div class="drawer-foot" id="drawer-foot"></div>
+  </aside>
+
+  <!-- ══════════ SEARCH OVERLAY ══════════ -->
+  <div class="search-overlay" id="search-overlay" hidden>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search-input" placeholder="Search HARBWEAR" autocomplete="off" aria-label="Search products">
+      <button id="search-close" aria-label="Close search">✕</button>
+    </div>
+    <p class="search-hint" id="search-hint">Type to search 24 products</p>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <!-- ══════════ PRODUCT MODAL ══════════ -->
+  <div class="modal-backdrop" id="pm-backdrop" hidden>
+    <div class="product-modal" role="dialog" aria-label="Product details">
+      <button class="pm-close" id="pm-close" aria-label="Close">✕</button>
+      <div class="pm-media">
+        <div class="pm-tabs">
+          <button class="pmtab active" data-view="photo">Photo</button>
+          <button class="pmtab" data-view="3d">3D View</button>
+        </div>
+        <div class="pm-photo" id="pm-photo">
+          <img id="pm-img" src="" alt="">
+          <div class="pm-zoom" id="pm-zoom"></div>
+        </div>
+        <canvas class="pm-canvas" id="pm-canvas" hidden></canvas>
+      </div>
+      <div class="pm-info">
+        <div class="pm-tag-row"><span class="pm-tag" id="pm-tag"></span><span class="pm-price" id="pm-price"></span></div>
+        <h3 class="pm-name" id="pm-name"></h3>
+        <p class="pm-desc" id="pm-desc"></p>
+        <div>
+          <p class="pm-label">Color</p>
+          <div class="pm-colors" id="pm-colors"></div>
+        </div>
+        <div>
+          <p class="pm-label">Size <button class="pm-wish" id="pm-sizeguide" style="border:0;background:none;padding:0;font-size:.66rem;color:var(--ash);letter-spacing:.14em;text-decoration:underline;text-transform:none">Size Guide ↗</button></p>
+          <div class="pm-sizes" id="pm-sizes"></div>
+        </div>
+        <p class="pm-msg" id="pm-msg"></p>
+        <div class="pm-buy">
+          <div class="pm-qty"><button id="pm-qminus" aria-label="Decrease">−</button><span id="pm-qval">1</span><button id="pm-qplus" aria-label="Increase">+</button></div>
+          <button class="btn btn-primary" id="pm-add" data-hover>Add to Cart</button>
+          <button class="pm-wish" id="pm-wish">♡ Add to Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ SIZE GUIDE ══════════ -->
+  <div id="sg-backdrop" hidden>
+    <div class="sg-box">
+      <button id="sg-close" aria-label="Close">✕</button>
+      <div id="sg-body"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ CHECKOUT ══════════ -->
+  <div id="co-backdrop" hidden>
+    <div class="checkout" role="dialog" aria-label="Checkout">
+      <div class="co-head">
+        <h3 id="co-title">Contact &amp; Address</h3>
+        <span id="co-steps">1 / 4</span>
+        <button id="co-close" aria-label="Close checkout">✕</button>
+      </div>
+      <div class="co-body" id="co-body"></div>
+      <div class="co-foot">
+        <button class="btn btn-ghost" id="co-back" hidden>← Back</button>
+        <p id="co-msg-zone"></p>
+        <button class="btn btn-primary" id="co-next">Continue to Payment →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <script src="js/vendor/three.min.js" defer></script>
+  <script src="js/vendor/OrbitControls.js" defer></script>
+  <script src="js/viewer3d.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/store.js" defer></script>
+</body>
+</html>

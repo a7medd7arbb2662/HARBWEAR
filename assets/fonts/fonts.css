@@ -1,0 +1,7 @@
+/* HARBWEAR brand fonts — Made Tommy (MadeType) + Inter (Google Fonts, OFL) */
+@font-face { font-family: 'Made Tommy'; src: url('made-tommy-400.woff2') format('woff2'); font-weight: 400; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Made Tommy'; src: url('made-tommy-500.woff2') format('woff2'); font-weight: 500; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Made Tommy'; src: url('made-tommy-700.woff2') format('woff2'); font-weight: 700; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Made Tommy'; src: url('made-tommy-800.woff2') format('woff2'); font-weight: 800; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('inter-latin.woff2') format('woff2'); font-weight: 100 900; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('inter-latin-ext.woff2') format('woff2'); font-weight: 100 900; font-display: swap; font-style: normal; }
